@@ -19,7 +19,6 @@
   <h1>PhD Theses</h1>
   <p>Click a column header to sort. Browse the list below, or <a href="theses.yaml" download>download the YAML</a>.</p>
   <table id="table"></table>
-
   <script>
     const cols = ["title", "name", "affiliation", "supervisors", "year", "url"];
     const labels = {
@@ -29,14 +28,12 @@
     let rows = [];
     let sortCol = null;
     let sortAsc = true;
-
     const formatCell = (col, value) => {
       if (value === undefined || value === null) return "";
       if (col === "supervisors" && Array.isArray(value)) return value.join(", ");
       if (col === "url") return `<a href="${value.trim()}" target="_blank">View</a>`;
       return value;
     };
-
     const sortValue = (col, row) => {
       const v = row[col];
       if (v === undefined || v === null) return "";
@@ -44,7 +41,6 @@
       if (typeof v === "string") return v.toLowerCase();
       return v;
     };
-
     function render() {
       let sorted = [...rows];
       if (sortCol) {
@@ -56,21 +52,46 @@
           return 0;
         });
       }
-
-  const thead = "<tr>" + cols.map(c => {
-    const upColor = (sortCol === c && sortAsc) ? "#333" : "#ccc";
-    const downColor = (sortCol === c && !sortAsc) ? "#333" : "#ccc";
-    return `<th data-col="${c}">
-      <span style="display:inline-flex; align-items:center; gap:6px;">
-        <span>${labels[c]}</span>
-        <span style="display:inline-flex; flex-direction:row; gap:2px; font-size:11px;">
-          <span style="color:${upColor};">▲</span>
-          <span style="color:${downColor};">▼</span>
-        </span>
-      </span>
-    </th>`;
-  }).join("") + "</tr>";
-
+      const thead = "<tr>" + cols.map(c => {
+        const upColor = (sortCol === c && sortAsc) ? "#333" : "#ccc";
+        const downColor = (sortCol === c && !sortAsc) ? "#333" : "#ccc";
+        return `<th data-col="${c}">
+          <span style="display:inline-flex; align-items:center; gap:6px;">
+            <span>${labels[c]}</span>
+            <span style="display:inline-flex; flex-direction:row; gap:2px; font-size:11px;">
+              <span style="color:${upColor};">▲</span>
+              <span style="color:${downColor};">▼</span>
+            </span>
+          </span>
+        </th>`;
+      }).join("") + "</tr>";
+      const tbody = sorted.map(row =>
+        "<tr>" + cols.map(c => `<td>${formatCell(c, row[c])}</td>`).join("") + "</tr>"
+      ).join("");
+      const table = document.getElementById("table");
+      table.innerHTML = thead + tbody;
+      table.querySelectorAll("th").forEach(th => {
+        th.addEventListener("click", () => {
+          const col = th.dataset.col;
+          if (sortCol === col) {
+            sortAsc = !sortAsc;
+          } else {
+            sortCol = col;
+            sortAsc = true;
+          }
+          render();
+        });
+      });
+    }
+    fetch("theses.yaml")
+      .then(response => response.text())
+      .then(text => {
+        rows = jsyaml.load(text);
+        render();
+      });
+  </script>
+</body>
+</html>
       const tbody = sorted.map(row =>
         "<tr>" + cols.map(c => `<td>${formatCell(c, row[c])}</td>`).join("") + "</tr>"
       ).join("");
