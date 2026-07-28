@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>PhD Theses</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+  <style>
+    body { font-family: sans-serif; margin: 2rem; max-width: 1000px; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ddd; padding: 8px 10px; text-align: left; vertical-align: top; }
+    th { background: #f4f4f4; }
+    tr:nth-child(even) { background: #fafafa; }
+    a { color: #0366d6; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <h1>PhD Theses</h1>
+  <p>Browse the list below, or <a href="theses.yaml" download>download the YAML</a>.</p>
+  <table id="table"></table>
+
+  <script>
+    fetch("theses.yaml")
+      .then(response => response.text())
+      .then(text => {
+        const data = jsyaml.load(text);
+
+        const cols = ["title", "name", "affiliation", "supervisors", "year", "url"];
+        const labels = {
+          title: "Title", name: "Author", affiliation: "Institution",
+          supervisors: "Supervisors", year: "Year", url: "Link"
+        };
+
+        const formatCell = (col, value) => {
+          if (value === undefined || value === null) return "";
+          if (col === "supervisors" && Array.isArray(value)) return value.join(", ");
+          if (col === "url") return `<a href="${value.trim()}" target="_blank">View</a>`;
+          return value;
+        };
+
+        const table = document.getElementById("table");
+        let thead = "<tr>" + cols.map(c => `<th>${labels[c]}</th>`).join("") + "</tr>";
+        let tbody = data.map(row =>
+          "<tr>" + cols.map(c => `<td>${formatCell(c, row[c])}</td>`).join("") + "</tr>"
+        ).join("");
+        table.innerHTML = thead + tbody;
+      });
+  </script>
+</body>
+</html>
