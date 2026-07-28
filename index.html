@@ -101,33 +101,3 @@
   </script>
 </body>
 </html>
-  const tbody = sorted.map(row =>
-    "<tr>" + cols.map(c => `<td>${formatCell(c, row[c])}</td>`).join("") + "</tr>"
-  ).join("");
-
-  const table = document.getElementById("table");
-  table.innerHTML = thead + tbody;
-
-  table.querySelectorAll("th").forEach(th => {
-    th.addEventListener("click", () => {
-      const col = th.dataset.col;
-      if (sortCol === col) {
-        sortAsc = !sortAsc;
-      } else {
-        sortCol = col;
-        sortAsc = true;
-      }
-      render();
-    });
-  });
-}
-    
-    fetch("theses.yaml")
-      .then(response => response.text())
-      .then(text => {
-        rows = jsyaml.load(text);
-        render();
-      });
-  </script>
-</body>
-</html>
