@@ -8,7 +8,9 @@
     body { font-family: sans-serif; margin: 2rem; max-width: 1000px; }
     table { border-collapse: collapse; width: 100%; }
     th, td { border: 1px solid #ddd; padding: 8px 10px; text-align: left; vertical-align: top; }
-    th { background: #f4f4f4; }
+    th { background: #f4f4f4; cursor: pointer; user-select: none; position: relative; }
+    th:hover { background: #eaeaea; }
+    th .arrow { font-size: 0.75em; margin-left: 4px; color: #888; }
     tr:nth-child(even) { background: #fafafa; }
     a { color: #0366d6; text-decoration: none; }
     a:hover { text-decoration: underline; }
@@ -16,34 +18,80 @@
 </head>
 <body>
   <h1>PhD Theses</h1>
-  <p>Browse the list below, or <a href="theses.yaml" download>download the YAML</a>.</p>
+  <p>Click a column header to sort. Browse the list below, or <a href="theses.yaml" download>download the YAML</a>.</p>
   <table id="table"></table>
 
   <script>
+    const cols = ["title", "name", "affiliation", "supervisors", "year", "url"];
+    const labels = {
+      title: "Title", name: "Author", affiliation: "Institution",
+      supervisors: "Supervisors", year: "Year", url: "Link"
+    };
+
+    let rows = [];
+    let sortCol = null;
+    let sortAsc = true;
+
+    const formatCell = (col, value) => {
+      if (value === undefined || value === null) return "";
+      if (col === "supervisors" && Array.isArray(value)) return value.join(", ");
+      if (col === "url") return `<a href="${value.trim()}" target="_blank">View</a>`;
+      return value;
+    };
+
+    // Value used for sorting (plain, comparable — not HTML)
+    const sortValue = (col, row) => {
+      const v = row[col];
+      if (v === undefined || v === null) return "";
+      if (col === "supervisors" && Array.isArray(v)) return v.join(", ").toLowerCase();
+      if (typeof v === "string") return v.toLowerCase();
+      return v;
+    };
+
+    function render() {
+      let sorted = [...rows];
+      if (sortCol) {
+        sorted.sort((a, b) => {
+          const va = sortValue(sortCol, a);
+          const vb = sortValue(sortCol, b);
+          if (va < vb) return sortAsc ? -1 : 1;
+          if (va > vb) return sortAsc ? 1 : -1;
+          return 0;
+        });
+      }
+
+      const thead = "<tr>" + cols.map(c => {
+        const arrow = sortCol === c ? `<span class="arrow">${sortAsc ? "▲" : "▼"}</span>` : "";
+        return `<th data-col="${c}">${labels[c]}${arrow}</th>`;
+      }).join("") + "</tr>";
+
+      const tbody = sorted.map(row =>
+        "<tr>" + cols.map(c => `<td>${formatCell(c, row[c])}</td>`).join("") + "</tr>"
+      ).join("");
+
+      const table = document.getElementById("table");
+      table.innerHTML = thead + tbody;
+
+      // Re-attach click handlers after re-render
+      table.querySelectorAll("th").forEach(th => {
+        th.addEventListener("click", () => {
+          const col = th.dataset.col;
+          if (sortCol === col) {
+            sortAsc = !sortAsc; // toggle direction if clicking the same column
+          } else {
+            sortCol = col;
+            sortAsc = true;
+          }
+          render();
+        });
+      });
+    }
+
     fetch("theses.yaml")
       .then(response => response.text())
       .then(text => {
-        const data = jsyaml.load(text);
-
-        const cols = ["title", "name", "affiliation", "supervisors", "year", "url"];
-        const labels = {
-          title: "Title", name: "Author", affiliation: "Institution",
-          supervisors: "Supervisors", year: "Year", url: "Link"
-        };
-
-        const formatCell = (col, value) => {
-          if (value === undefined || value === null) return "";
-          if (col === "supervisors" && Array.isArray(value)) return value.join(", ");
-          if (col === "url") return `<a href="${value.trim()}" target="_blank">View</a>`;
-          return value;
-        };
-
-        const table = document.getElementById("table");
-        let thead = "<tr>" + cols.map(c => `<th>${labels[c]}</th>`).join("") + "</tr>";
-        let tbody = data.map(row =>
-          "<tr>" + cols.map(c => `<td>${formatCell(c, row[c])}</td>`).join("") + "</tr>"
-        ).join("");
-        table.innerHTML = thead + tbody;
+        rows = jsyaml.load(text);
+        render();
       });
   </script>
 </body>
