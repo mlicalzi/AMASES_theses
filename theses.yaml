@@ -1,3 +1,11 @@
+- name: Alessandra Cretarola
+  affiliation: Università "D'Annunzio" Chieti
+  year: 2014
+  url:  http://hdl.handle.net/1959.4/105724 
+  title: "Titolo da comunicare"
+  supervisors:
+    - Francesca Biagini
+
 - name: Jeremy Vollen
   affiliation: University of New South Wales
   year: 2025
