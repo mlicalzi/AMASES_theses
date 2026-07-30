@@ -6,43 +6,26 @@ description: >
 title: PhD Theses
 ---
 
-<section markdown="1" class="section-with-navs">
-
 # PhD Theses
 
 This is an (incomplete) list of PhD theses in fields related to AMASES (Association for Mathematics Applied to Economic and Social Sciences).
 Suggestions for further additions are very welcome.
 You can also [download the YAML](_data/theses.yml).
 
-{% assign theses_by_year = AMASES_theses.data.theses | group_by: 'year' %}
-{% assign theses_by_year_sorted = theses_by_year | sort: 'name' | reverse %}
-<div class="page-navigation-wrap">
-<div class="page-navigation">
-{% for year in theses_by_year_sorted %}
-<span><a href="#{{ year.name }}">{{ year.name }}</a></span>
-{% endfor %}
-</div>
-</div>
-</section>
+{% assign years = site.data.theses | group_by: "year" | sort: "name" | reverse %}
+{% for group in years %}[{{ group.name }}](#{{ group.name }}) {% endfor %}
 
-{% for year in theses_by_year_sorted %}
-<section id="{{ year.name }}">
-<h2>{{ year.name }}</h2>
-<ul>
-    {% for thesis in year.items %}
-        <li><p>
-            <strong>{{ thesis.name }}</strong> ({{ thesis.affiliation }}, {{ thesis.year }}) <br>
-            <a href="{{ thesis.url }}" target="_blank" rel="noreferrer">{{ thesis.title }}</a> <br>
-            {% if thesis.supervisors.size == 1 %}
-                Supervisor: {{ thesis.supervisors[0] }}
-            {% else %}
-                Supervisors:
-                {% for supervisor in thesis.supervisors %}
-                    {{ supervisor }}{% unless forloop.last %}{% if forloop.rindex == 2 %} and {% else %}, {% endif %}{% endunless %}
-                {% endfor %}
-            {% endif %}
-        </p></li>
-    {% endfor %}
-</ul>
-</section>
+{% for group in years %}
+## {{ group.name }} {: id="{{ group.name }}" }
+
+
+{% assign items = group.items | sort: "name" %}
+{% for t in items %}
+- **{{ t.name }}** ({{ t.affiliation }}, {{ t.year }})  
+  [{{ t.title }}]({{ t.url }})  
+  {% if t.supervisors.size == 1 %}Supervisor: {{ t.supervisors[0] }}
+  {% else %}Supervisors:
+  {% for s in t.supervisors %}{{ s }}{% unless forloop.last %} and{% endunless %} {% endfor %}
+  {% endif %}
+{% endfor %}
 {% endfor %}
