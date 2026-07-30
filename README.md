@@ -1,2 +1,4 @@
 # AMASES_theses
-This is a trial attempt to set up a database for AMASES-related theses
+This is an attempt to set up a database for AMASES-related theses.
+
+For the time being, KISS applies.
