@@ -11,10 +11,7 @@ description: >-
 
 This is an (incomplete) list of PhD theses in fields related to [AMASES](https://www.amases.org) (Association for Mathematics Applied to Economic and Social Sciences).
 
-Suggestions for further additions are very welcome. 
-
- You can ping [GitHub]({{ site.github.repository_url | default: site.github_url | default: '#' }}) or [download the YAML database](_data/theses.yml).
-
+Suggestions for further additions are very welcome: ping [GitHub]({{ site.github.repository_url | default: site.github_url | default: '#' }}).
 
 {% assign theses_by_year = site.data.theses | group_by: 'year' %}
 {% assign theses_by_year_sorted = theses_by_year | sort: 'name' | reverse %}
