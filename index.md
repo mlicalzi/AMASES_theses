@@ -5,7 +5,7 @@ description: >-
   Discover PhD theses that have been written by Computational Social Choice (COMSOC) scientists.
 ---
 
-<section class="section-with-navs">
+<section markdown="1" class="section-with-navs">
 
 # PhD Theses
 
