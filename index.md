@@ -2,17 +2,21 @@
 title: PhD Theses
 ---
 
+
 # PhD Theses
+
 
 This is an (incomplete) list of PhD theses in Economics/AMASES-related fields.
 Suggestions for further additions are very welcome — [download the YAML](theses.yml)
 or open a pull request on [GitHub](https://github.com/mlicalzi/AMASES_theses).
+
 
 {% assign years = site.data.theses | group_by: "year" | sort: "name" | reverse %}
 {% for group in years %}[{{ group.name }}](#{{ group.name }}) {% endfor %}
 
 {% for group in years %}
 ## {{ group.name }} {: id="{{ group.name }}" }
+
 
 {% assign items = group.items | sort: "name" %}
 {% for t in items %}
