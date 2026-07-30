@@ -6,7 +6,7 @@ title: PhD Theses
 
 This is an (incomplete) list of PhD theses in AMASES-related fields.
 Suggestions for further additions are very welcome — [download the YAML](theses.yml)
-or open a pull request on [GitHub](https://github.com/mlicalzi/AMASES_theses).
+or open a pull request on [GitHub](https://github.com/mlicalzi/AMASES_theses/_data).
 
 {% assign years = site.data.theses | group_by: "year" | sort: "name" | reverse %}
 {% for group in years %}[{{ group.name }}](#{{ group.name }}) {% endfor %}
