@@ -2,36 +2,6 @@
 title: PhD Theses
 ---
 
-<style>
-  /* Styling for headings and tags */
-  h3 {
-    margin-bottom: 0.3rem;
-    color: #0366d6;
-  }
-
-  code {
-    background-color: #f1f8ff;
-    color: #0366d6;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-size: 0.85em;
-  }
-
-  /* Collapsible abstract styling */
-  details {
-    margin-top: 0.5rem;
-    padding: 0.5rem;
-    background-color: #f6f8fa;
-    border-radius: 6px;
-    border: 1px solid #e1e4e8;
-  }
-
-  details summary {
-    cursor: pointer;
-    color: #24292e;
-  }
-</style>
-
 # PhD Theses
 
 This is an (incomplete) list of PhD theses in AMASES-related fields.
