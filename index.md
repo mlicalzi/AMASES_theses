@@ -2,7 +2,7 @@
 layout: default
 title: PhD Theses | COMSOC
 description: >-
-  Discover PhD theses that have been written by Computational Social Choice (COMSOC) scientists.
+  Discover PhD theses that have been written by scholars related to AMASES.
 ---
 
 <section markdown="1" class="section-with-navs">
