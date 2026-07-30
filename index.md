@@ -14,7 +14,7 @@ This is an (incomplete) list of PhD theses in fields related to AMASES (Associat
 Suggestions for further additions are very welcome.
 You can also [download the YAML](_data/theses.yml).
 
-{% assign theses_by_year = site.data.theses | group_by: 'year' %}
+{% assign theses_by_year = AMASES_theses.data.theses | group_by: 'year' %}
 {% assign theses_by_year_sorted = theses_by_year | sort: 'name' | reverse %}
 <div class="page-navigation-wrap">
 <div class="page-navigation">
