@@ -18,7 +18,6 @@ You can also [download the YAML](_data/theses.yml).
 {% for group in years %}
 ## {{ group.name }} {: id="{{ group.name }}" }
 
-
 {% assign items = group.items | sort: "name" %}
 {% for t in items %}
 - **{{ t.name }}** ({{ t.affiliation }}, {{ t.year }})  
