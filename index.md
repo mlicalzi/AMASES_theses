@@ -1,6 +1,6 @@
 ---
 layout: default
-title: PhD Theses | COMSOC
+title: PhD Theses | AMASES
 description: >-
   Discover PhD theses that have been written by scholars related to AMASES.
 ---
