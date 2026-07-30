@@ -1,12 +1,16 @@
 ---
+layout: default
+title: PhD Theses | AMASES
+description: >
+  Discover PhD theses written by scientists related to AMASES
 title: PhD Theses
 ---
 
 # PhD Theses
 
-This is an (incomplete) list of PhD theses in AMASES-related fields.
-Suggestions for further additions are very welcome — [download the YAML](_data/theses.yml)
-or open a pull request on [GitHub](https://github.com/mlicalzi/AMASES_theses/).
+This is an (incomplete) list of PhD theses in fields related to AMASES (Association for Mathematics Applied to Economic and Social Sciences).
+Suggestions for further additions are very welcome.
+You can also [download the YAML](_data/theses.yml).
 
 {% assign years = site.data.theses | group_by: "year" | sort: "name" | reverse %}
 {% for group in years %}[{{ group.name }}](#{{ group.name }}) {% endfor %}
