@@ -1,11 +1,19 @@
-- name: Alessandra Cretarola
-  affiliation: Università "D'Annunzio" Chieti
-  year: 2014
-  url:  http://hdl.handle.net/1959.4/105724 
-  title: "Titolo da comunicare"
+- name: Alperen Yasar
+  affiliation: Università Ca' Foscari Venezia and Sorbonne Université 
+  year: 2025
+  url: 
+  title: "Three essays in mental models"
   supervisors:
-    - Francesca Biagini
+    - Marco Li Calzi
 
+- name: Marco LiCalzi 
+  affiliation: Stanford University
+  year: 1993
+  url:  https://searchworks.stanford.edu/view/10043980
+  title: "Playing games by similarities"
+  supervisors:
+    - David Kreps
+    
 - name: Jeremy Vollen
   affiliation: University of New South Wales
   year: 2025
