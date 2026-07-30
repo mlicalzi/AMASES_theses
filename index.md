@@ -2,9 +2,50 @@
 layout: default
 title: PhD Theses | AMASES
 description: >
-  Discover PhD theses written by scientists related to AMASES
+  Discover PhD theses written by scholars related to AMASES
 title: PhD Theses
 ---
+
+<section markdown="1" class="section-with-navs">
+
+# PhD Theses
+
+This is an (incomplete) list of PhD theses in the field of computational social choice.
+Suggestions for further additions are very welcome. 
+Just ping us on <a href="{{ site.github_url }}">GitHub</a>.
+
+{% assign theses_by_year = site.data.theses | group_by: 'year' %}
+{% assign theses_by_year_sorted = theses_by_year | sort: 'name' | reverse %}
+<div class="page-navigation-wrap">
+<div class="page-navigation">
+{% for year in theses_by_year_sorted %}
+<span><a href="#{{ year.name }}">{{ year.name }}</a></span>
+{% endfor %}
+</div>
+</div>
+</section>
+
+{% for year in theses_by_year_sorted %}
+<section id="{{ year.name }}">
+<h2>{{ year.name }}</h2>
+<ul>
+    {% for thesis in year.items %}
+        <li><p>
+            <strong>{{ thesis.name }}</strong> ({{ thesis.affiliation }}, {{ thesis.year }}) <br>
+            <a href="{{ thesis.url }}" target="_blank" rel="noreferrer">{{ thesis.title }}</a> <br>
+            {% if thesis.supervisors.size == 1 %}
+                Supervisor: {{ thesis.supervisors[0] }}
+            {% else %}
+                Supervisors:
+                {% for supervisor in thesis.supervisors %}
+                    {{ supervisor }}{% unless forloop.last %}{% if forloop.rindex == 2 %} and {% else %}, {% endif %}{% endunless %}
+                {% endfor %}
+            {% endif %}
+        </p></li>
+    {% endfor %}
+</ul>
+</section>
+{% endfor %}
 
 # PhD Theses
 
@@ -12,20 +53,35 @@ This is an (incomplete) list of PhD theses in fields related to AMASES (Associat
 Suggestions for further additions are very welcome.
 You can also [download the YAML](_data/theses.yml).
 
-{% assign years = site.data.theses | group_by: "year" | sort: "name" | reverse %}
-{% for group in years %}[{{ group.name }}](#{{ group.name }}) {% endfor %}
-
-{% for group in years %}
-## {{ group.name }} {: id="{{ group.name }}" }
-
-
-{% assign items = group.items | sort: "name" %}
-{% for t in items %}
-- **{{ t.name }}** ({{ t.affiliation }}, {{ t.year }})  
-  [{{ t.title }}]({{ t.url }})  
-  {% if t.supervisors.size == 1 %}Supervisor: {{ t.supervisors[0] }}
-  {% else %}Supervisors:
-  {% for s in t.supervisors %}{{ s }}{% unless forloop.last %} and{% endunless %} {% endfor %}
-  {% endif %}
+{% assign theses_by_year = site.data.theses | group_by: 'year' %}
+{% assign theses_by_year_sorted = theses_by_year | sort: 'name' | reverse %}
+<div class="page-navigation-wrap">
+<div class="page-navigation">
+{% for year in theses_by_year_sorted %}
+<span><a href="#{{ year.name }}">{{ year.name }}</a></span>
 {% endfor %}
+</div>
+</div>
+</section>
+
+{% for year in theses_by_year_sorted %}
+<section id="{{ year.name }}">
+<h2>{{ year.name }}</h2>
+<ul>
+    {% for thesis in year.items %}
+        <li><p>
+            <strong>{{ thesis.name }}</strong> ({{ thesis.affiliation }}, {{ thesis.year }}) <br>
+            <a href="{{ thesis.url }}" target="_blank" rel="noreferrer">{{ thesis.title }}</a> <br>
+            {% if thesis.supervisors.size == 1 %}
+                Supervisor: {{ thesis.supervisors[0] }}
+            {% else %}
+                Supervisors:
+                {% for supervisor in thesis.supervisors %}
+                    {{ supervisor }}{% unless forloop.last %}{% if forloop.rindex == 2 %} and {% else %}, {% endif %}{% endunless %}
+                {% endfor %}
+            {% endif %}
+        </p></li>
+    {% endfor %}
+</ul>
+</section>
 {% endfor %}
