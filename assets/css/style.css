@@ -68,6 +68,21 @@ h2.year-heading {
   color: #1f2937;
 }
 
+/* Alternate background color per year block */
+section[id] {
+  padding: 1.25rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+section[id]:nth-of-type(odd) {
+  background-color: #ffffff;
+}
+
+section[id]:nth-of-type(even) {
+  background-color: #f3f4f6;
+}
+
 /* Thesis List Items (Bulletless Cards) */
 ul.thesis-list {
   list-style: none;
