@@ -14,33 +14,34 @@ Applied to Economic and Social Sciences). Suggestions for further additions
 are very welcome: ping <a href="https://github.com/mlicalzi/AMASES_theses">GitHub</a>.
 </p>
 
-{% assign theses_by_year = site.data.theses | group_by: 'year' %}
-{% assign theses_by_year_sorted = theses_by_year | sort: 'name' | reverse %}
+{%- assign theses_by_year = site.data.theses | group_by: 'year' -%}
+{%- assign theses_by_year_sorted = theses_by_year | sort: 'name' | reverse -%}
 
 <nav class="year-nav">
-  {% for year in theses_by_year_sorted %}
-    <a href="#{{ year.name }}">{{ year.name }}</a>
-  {% endfor %}
+{%- for year in theses_by_year_sorted %}
+  <a href="#{{ year.name }}">{{ year.name }}</a>
+{%- endfor %}
 </nav>
 
-{% for year in theses_by_year_sorted %}
+{%- for year in theses_by_year_sorted %}
 <section id="{{ year.name }}">
   <h2 class="year-heading">{{ year.name }}</h2>
   <ul class="thesis-list">
-    {% for thesis in year.items %}
+  {%- assign items = year.items | sort: 'name' -%}
+  {%- for thesis in items %}
     <li>
       <div class="thesis-author"><strong>{{ thesis.name }}</strong> ({{ thesis.affiliation }}, {{ thesis.year }})</div>
       <div class="thesis-title"><a href="{{ thesis.url }}" target="_blank" rel="noreferrer">{{ thesis.title }}</a></div>
-      {% if thesis.supervisors and thesis.supervisors.size > 0 %}
+      {%- if thesis.supervisors and thesis.supervisors.size > 0 %}
       <div class="thesis-supervisor">
-        {% if thesis.supervisors.size == 1 %}Supervisor: {{ thesis.supervisors[0] }}
-        {% else %}Supervisors:
-          {% for supervisor in thesis.supervisors %}{{ supervisor }}{% unless forloop.last %}{% if forloop.rindex == 2 %} and {% else %}, {% endif %}{% endunless %}{% endfor %}
-        {% endif %}
+        {%- if thesis.supervisors.size == 1 %}Supervisor: {{ thesis.supervisors[0] }}
+        {%- else %}Supervisors:
+          {%- for supervisor in thesis.supervisors %}{{ supervisor }}{% unless forloop.last %}{% if forloop.rindex == 2 %} and {% else %}, {% endif %}{% endunless %}{% endfor -%}
+        {%- endif %}
       </div>
-      {% endif %}
+      {%- endif %}
     </li>
-    {% endfor %}
+  {%- endfor %}
   </ul>
 </section>
-{% endfor %}
+{%- endfor %}
