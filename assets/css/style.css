@@ -28,6 +28,7 @@ p.intro {
   font-size: 1.05rem;
   margin-bottom: 1.5rem;
   line-height: 1.6;
+  background-color: #f3f4f6;
 }
 
 /* Year Navigation (Pills) */
@@ -64,7 +65,8 @@ h2.year-heading {
   margin-top: 2rem;
   margin-bottom: 1rem;
   padding-bottom: 0.25rem;
-  border-bottom: 2px solid #e5e7eb;
+/*  border-bottom: 2px solid #e5e7eb;*/
+  border-bottom: none;
   color: #1f2937;
 }
 
