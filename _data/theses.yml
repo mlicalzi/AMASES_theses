@@ -1,6 +1,41 @@
+- name: Benedetta Salterini
+  affiliation: Università degli Studi di Firenze
+  year: 2023
+  url: https://flore.unifi.it/handle/2158/1316433
+  title: "Optimal Control Problems and Their Applications to Insurance"
+  supervisors:
+    - Katia Colaneri
+    - Alessandra Cretarola
+
+- name: Giacomo Lanaro
+  affiliation: Università degli Studi di Padova
+  year: 2024
+  url: https://www.research.unipd.it/handle/11577/3518003
+  title: "Three Essays in Financial Mathematics"
+  supervisors:
+    - Claudio Fontana
+
+- name: Beatrice Ongarato
+  affiliation: Università degli Studi di Padova
+  year: 2026
+  url: https://www.research.unipd.it/handle/11577/3583599
+  title: "Hawkes and Affine Processes in Risk Modeling: Theory and Applications in Finance and Cybersecurity"
+  supervisors:
+    - Giorgia Callegaro
+    - Claudio Fontana
+    
+- name: Tiziana Ciano
+  affiliation: Università degli Studi Mediterranea di Reggio Calabria
+  year: 2022
+  url: https://tesidottorato.depositolegale.it/handle/20.500.14242/85525
+  title: "Advances on Dynamics Modeling: New Issues on Mathematical Programming, Artificial Intelligence and COVID-19 Transmission Forecasting"
+  supervisors:
+    - Massimiliano Ferrara
+    - Massimo Finocchiaro Castro
+
 - name: Jane Doe
   affiliation: Università di Bologna and KU Leuven
-  year: 2025
+  year: 2023
   url: https://hdl.handle.net/xxxx/yyyy
   title: "An Exemplary Thesis"
   supervisors:
