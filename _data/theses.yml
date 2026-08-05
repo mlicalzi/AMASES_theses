@@ -1,3 +1,29 @@
+- name: Daniele Mancinelli
+  affiliation: Sapienza Università di Roma
+  year: 2024
+  url: https://hdl.handle.net/20.500.14242/158460
+  title: "New Insights on Portfolio Insurance Strategies for Financial and  Longevity Risk Management"
+  supervisor:
+    - Immacolata Oliva
+ 
+- name: Sara Iannilli
+  affiliation: Sapienza Università di Roma
+  year: 2026
+  url: https://iris.uniroma1.it/handle/11573/1760653
+  title: "Investing in Uncertainty: Inflation, Shocks, and Geopolitical Risk"
+  supervisors:
+    - Immacolata Oliva
+    - Antonio Luciano Martire
+
+- name: Ofelia Bonesini
+  affiliation: Università degli Studi di Padova
+  year: 2023
+  url: https://www.research.unipd.it/handle/11577/3474223
+  title: "Four essays in between Probability Theory and Financial Mathematics"
+  supervisors:
+    - Markus Fischer
+    - Giorgia Callegaro
+
 - name: Benedetta Salterini
   affiliation: Università degli Studi di Firenze
   year: 2023
@@ -32,15 +58,6 @@
   supervisors:
     - Massimiliano Ferrara
     - Massimo Finocchiaro Castro
-
-- name: Jane Doe
-  affiliation: Università di Bologna and KU Leuven
-  year: 2023
-  url: https://hdl.handle.net/xxxx/yyyy
-  title: "An Exemplary Thesis"
-  supervisors:
-    - Primo Supervisore
-    - Secondo Supervisore
 
 - name: Alperen Yasar
   affiliation: Università Ca' Foscari Venezia and Sorbonne Université 
