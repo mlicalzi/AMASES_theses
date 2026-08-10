@@ -1,3 +1,31 @@
+- name: Angelo Enrico Petralia 
+  affiliation: University of Turin and Collegio Carlo Alberto
+  year: 2022
+  url: https://iris.unito.it/retrieve/870a3196-e1b2-4833-90b6-5f7d9d8949a6/Petralia_Phd_thesis.pdf
+  title: "Essays on Bounded Rationality"
+  supervisor:
+    - Paolo Ghirardato
+ 
+- name: Davide Carpentiere
+  affiliation: University of Messina (joint program with the universities of Palermo and Catania)
+  year: 2026
+  url: https://iris.unito.it/retrieve/870a3196-e1b2-4833-90b6-5f7d9d8949a6/Petralia_Phd_thesis.pdf
+  title: "Preference Modeling and Choice Theory: A Set-Theoretic Approach to Rationality"
+  supervisor:
+    - Patrizia Daniele
+    - Alfio Giarlotta
+    - Stephen Watson
+ 
+- name: Ester Sudano
+  affiliation: Queen Mary University of London
+  year: 2026
+  url: https://iris.unito.it/retrieve/870a3196-e1b2-4833-90b6-5f7d9d8949a6/Petralia_Phd_thesis.pdf
+  title: "Essays on Choice"
+  supervisor:
+    - Marco Mariotti
+    - Christopher Tyson 
+    - Evgenii Safonov
+              
 - name: Daniele Mancinelli
   affiliation: Sapienza Università di Roma
   year: 2024
@@ -82,4 +110,3 @@
   title: "Playing Games by Similarities"
   supervisors:
     - David Kreps
-    
