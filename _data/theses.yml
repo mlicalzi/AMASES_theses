@@ -3,23 +3,23 @@
   year: 2018
   url: https://u-pad.unimc.it/handle/11393/251177
   title: "Nonlinear Dynamics and Economic Growth: The Influence of the Elasticity of Substitution Between Input Factors and Differential Savings Propensities"
-  supervisor:
+  supervisors:
     - Cristiana Mammana
     
 - name: Ilaria Stefani
-  supervisor:
-    - Immacolata Oliva
   affiliation: Sapienza Università di Roma
   year: 2024
   url: 
   title: "Dynamic Portfolio Optimization with Stochastic Investment Opportunities and Discontinuities"
-
+  supervisors:
+    - Immacolata Oliva
+ 
 - name: Giorgia Franchini
   affiliation: Università degli Studi di Modena e Reggio Emilia
   year: 2021
   url: https://iris.unimore.it/retrieve/e31e124f-6fe7-987f-e053-3705fe0a095a/TesiDefinitiva_FranchiniGiorgia.pdf
   title: "Hyperparameters Setting in Stochastic Optimisation Methods"
-  supervisor:
+  supervisors:
     - Luca Zanni
     - Valeria Ruggiero
 
@@ -28,7 +28,7 @@
   year: 2022
   url: https://iris.unito.it/retrieve/870a3196-e1b2-4833-90b6-5f7d9d8949a6/Petralia_Phd_thesis.pdf
   title: "Essays on Bounded Rationality"
-  supervisor:
+  supervisors:
     - Paolo Ghirardato
  
 - name: Davide Carpentiere
@@ -36,7 +36,7 @@
   year: 2026
   url: https://iris.unito.it/retrieve/870a3196-e1b2-4833-90b6-5f7d9d8949a6/Petralia_Phd_thesis.pdf
   title: "Preference Modeling and Choice Theory: A Set-Theoretic Approach to Rationality"
-  supervisor:
+  supervisors:
     - Patrizia Daniele
     - Alfio Giarlotta
     - Stephen Watson
@@ -46,7 +46,7 @@
   year: 2026
   url: https://iris.unito.it/retrieve/870a3196-e1b2-4833-90b6-5f7d9d8949a6/Petralia_Phd_thesis.pdf
   title: "Essays on Choice"
-  supervisor:
+  supervisors:
     - Marco Mariotti
     - Christopher Tyson 
     - Evgenii Safonov
@@ -56,7 +56,7 @@
   year: 2024
   url: https://hdl.handle.net/20.500.14242/158460
   title: "New Insights on Portfolio Insurance Strategies for Financial and  Longevity Risk Management"
-  supervisor:
+  supervisors:
     - Immacolata Oliva
  
 - name: Sara Iannilli
