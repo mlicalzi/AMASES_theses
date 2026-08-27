@@ -1,0 +1,278 @@
+- name: Claudio Fontana
+  affiliation: Università degli Studi di Padova
+  year: 2012
+  url: https://www.research.unipd.it/handle/11577/3421736
+  title: "Four Essays in Financial Mathematics"
+  supervisors: 
+    - Wolfgang J. Runggaldier
+
+- name: Federico Severino
+  affiliation: Università Commerciale Luigi Bocconi 
+  year: 2018
+  url: https://tesidottorato.depositolegale.it/bitstream/20.500.14242/167154/1/1691377.pdf
+  title: "Orthogonal Decompositions in Asset Pricing"
+  supervisors:
+    - Fulvio Ortu
+    
+- name: Guodong Ding
+  affiliation: Politecnico di Milano
+  year: 2021
+  url: https://www.politesi.polimi.it/handle/10589/177423
+  title: "Optimal Consumption-Portfolio-Leisure Policy in Retirement-Bankruptcy Time Problem with Power Utility Function"
+  supervisors:
+    - Daniele Marazzina
+
+- name: Gaetano La Bua
+  affiliation: Politecnico di Milano
+  year: 2017
+  url: https://www.politesi.polimi.it/handle/10589/131919
+  title: "Three Essays in Mathematical Finance"
+  supervisors:
+    - Daniele Marazzina
+
+- name: Mariaelisa Pelle
+  affiliation: Università degli Studi del Sannio
+  year: 2026
+  url:
+  title: "Applicazione del Machine Learning nella Valutazione del Solvency Ratio"
+  supervisors:
+    - Nicolino Ettore D'Ortona
+    - Gabriella Marcarelli
+
+- name: Roberto Casarin
+  affiliation: Université Paris Dauphine - PSL
+  year: 2007
+  url: https://theses.fr/2007PA090056
+  title: "Méthodes de Simulation pour l'Estimation Bayésienne des Modèles à Variables Latentes"
+  supervisors:
+    - Christian P. Robert
+
+- name: Maria Rosaria Pappalardo
+  affiliation: Università degli Studi di Messina
+  year: 2020
+  url: http://hdl.handle.net/11570/3182137
+  title: "Assessing Performance Evaluation and Credit Risk of Energy Companies with Multicriteria Decision Models"
+  supervisor:
+    - Silvia Angilella
+
+- name: Marco Piccirilli
+  affiliation: Università degli Studi di Padova
+  year: 2019
+  url: https://www.research.unipd.it/retrieve/e14fb26f-f7e6-3de1-e053-1705fe0ac030/Thesis_reviewed.pdf
+  title: "Additive Models for Energy Markets"
+  supervisors:
+    - Tiziano Vargiolu
+
+- name: Matteo Basei
+  affiliation: Università degli Studi di Padova
+  year: 2016
+  url: https://www.research.unipd.it/retrieve/e14fb26f-f26e-3de1-e053-1705fe0ac030/Basei_Matteo_tesi.pdf
+  title: "Topics in Stochastic Control and Differential Game Theory, with Application to Mathematical Finance"
+  supervisors:
+    - Tiziano Vargiolu
+
+- name: Stefano Pagliarani
+  affiliation: Università degli Studi di Padova
+  year: 2014
+  url: https://www.research.unipd.it/retrieve/e14fb26f-fbe9-3de1-e053-1705fe0ac030/pagliarani_stefano_tesi.pdf
+  title: "Portfolio Optimization and Option Pricing under Defaultable Lévy Driven Models"
+  supervisors:
+    - Tiziano Vargiolu
+    - Agostino Capponi
+    - Andrea Pascucci
+
+- name: Enrico Edoli
+  affiliation: Università degli Studi di Padova
+  year: 2013
+  url: https://www.research.unipd.it/retrieve/e14fb26f-f1c6-3de1-e053-1705fe0ac030/Enrico_Edoli_tesi.pdf
+  title: "Pricing of Gas Swing Contracts with Indexed Strike: a Viscosity Solution Approach with Applications"
+  supervisors:
+    - Tiziano Vargiolu
+
+- name: Mihaela Antonia Cucicea
+  affiliation: Università degli Studi di Padova
+  year: 2006
+  url:
+  title: "Weak Convergence of Shortfall Risk Minimizing Portfolios"
+  supervisors:
+    - Tiziano Vargiolu
+
+- name: Vera Blaka Hallulli
+  affiliation: Università degli Studi di Padova
+  year: 2005
+  url:
+  title: "Stochastic Delay Differential Equations and Applications to Mathematical Finance"
+  supervisors:
+    - Giovanni Battista Di Masi
+    - Tiziano Vargiolu
+
+- name: Tiziano Vargiolu
+  affiliation: Scuola Normale Superiore
+  year: 2002
+  url:
+  title: "The Black-Scholes-Barenblatt Equation and its Applications in Mathematical Finance"
+  supervisors:
+    - Wolfgang Runggaldier
+
+- name: Maria Flora
+  affiliation: Università degli Studi di Padova
+  year: 2019
+  url: https://www.research.unipd.it/retrieve/e14fb26f-f7db-3de1-e053-1705fe0ac030/Flora_Maria_tesi.pdf
+  title: "Essays on Energy Markets"
+  supervisors:
+    - Tiziano Vargiolu
+
+- name: Almendra Alexandra Awerking Vargas
+  affiliation: Università degli Studi di Padova
+  year: 2022
+  url: https://www.research.unipd.it/retrieve/f38e2de5-4ebf-48cb-b947-59a13b1c4c19/Final_Thesis_Almendra_Awerkin.pdf
+  title: "On Finite Fuel Irreversible Investment Problems"
+  supervisors:
+    - Tiziano Vargiolu
+    - Markus Fischer
+    
+- name: Mariia Soloviova
+  affiliation: Università degli Studi di Padova
+  year: 2021
+  url: https://www.research.unipd.it/retrieve/97e3ae3b-77f4-48b0-8508-af9a7a17eea0/tesi_Mariia_Soloviova-pdfa.pdf
+  title: "Modeling and Forecasting Electricity Market Variables Using Functional Data Analysis"
+  supervisors:
+    - Tiziano Vargiolu
+
+- name: Francesca Grassetti
+  affiliation: Università degli Studi di Macerata
+  year: 2018
+  url: https://u-pad.unimc.it/handle/11393/251177
+  title: "Nonlinear Dynamics and Economic Growth: The Influence of the Elasticity of Substitution Between Input Factors and Differential Savings Propensities"
+  supervisors:
+    - Cristiana Mammana
+    
+- name: Ilaria Stefani
+  affiliation: Sapienza Università di Roma
+  year: 2024
+  url: 
+  title: "Dynamic Portfolio Optimization with Stochastic Investment Opportunities and Discontinuities"
+  supervisors:
+    - Immacolata Oliva
+ 
+- name: Giorgia Franchini
+  affiliation: Università degli Studi di Modena e Reggio Emilia
+  year: 2021
+  url: https://iris.unimore.it/retrieve/e31e124f-6fe7-987f-e053-3705fe0a095a/TesiDefinitiva_FranchiniGiorgia.pdf
+  title: "Hyperparameters Setting in Stochastic Optimisation Methods"
+  supervisors:
+    - Luca Zanni
+    - Valeria Ruggiero
+
+- name: Angelo Enrico Petralia 
+  affiliation: University of Turin and Collegio Carlo Alberto
+  year: 2022
+  url: https://iris.unito.it/retrieve/870a3196-e1b2-4833-90b6-5f7d9d8949a6/Petralia_Phd_thesis.pdf
+  title: "Essays on Bounded Rationality"
+  supervisors:
+    - Paolo Ghirardato
+ 
+- name: Davide Carpentiere
+  affiliation: University of Messina (joint program with the universities of Palermo and Catania)
+  year: 2026
+  url: https://iris.unime.it/handle/11570/3347471
+  title: "Preference Modeling and Choice Theory: A Set-Theoretic Approach to Rationality"
+  supervisors:
+    - Patrizia Daniele
+    - Alfio Giarlotta
+    - Stephen Watson
+ 
+- name: Ester Sudano
+  affiliation: Queen Mary University of London
+  year: 2026
+  url: 
+  title: "Essays on Choice"
+  supervisors:
+    - Marco Mariotti
+    - Christopher Tyson 
+    - Evgenii Safonov
+              
+- name: Daniele Mancinelli
+  affiliation: Sapienza Università di Roma
+  year: 2024
+  url: https://hdl.handle.net/20.500.14242/158460
+  title: "New Insights on Portfolio Insurance Strategies for Financial and  Longevity Risk Management"
+  supervisors:
+    - Immacolata Oliva
+ 
+- name: Sara Iannilli
+  affiliation: Sapienza Università di Roma
+  year: 2026
+  url: https://iris.uniroma1.it/handle/11573/1760653
+  title: "Investing in Uncertainty: Inflation, Shocks, and Geopolitical Risk"
+  supervisors:
+    - Immacolata Oliva
+    - Antonio Luciano Martire
+
+- name: Ofelia Bonesini
+  affiliation: Università degli Studi di Padova
+  year: 2023
+  url: https://www.research.unipd.it/handle/11577/3474223
+  title: "Four essays in between Probability Theory and Financial Mathematics"
+  supervisors:
+    - Markus Fischer
+    - Giorgia Callegaro
+
+- name: Benedetta Salterini
+  affiliation: Università degli Studi di Firenze
+  year: 2023
+  url: https://flore.unifi.it/handle/2158/1316433
+  title: "Optimal Control Problems and Their Applications to Insurance"
+  supervisors:
+    - Katia Colaneri
+    - Alessandra Cretarola
+
+- name: Giacomo Lanaro
+  affiliation: Università degli Studi di Padova
+  year: 2024
+  url: https://www.research.unipd.it/handle/11577/3518003
+  title: "Three Essays in Financial Mathematics"
+  supervisors:
+    - Claudio Fontana
+
+- name: Beatrice Ongarato
+  affiliation: Università degli Studi di Padova
+  year: 2026
+  url: https://www.research.unipd.it/handle/11577/3583599
+  title: "Hawkes and Affine Processes in Risk Modeling: Theory and Applications in Finance and Cybersecurity"
+  supervisors:
+    - Giorgia Callegaro
+    - Claudio Fontana
+    
+- name: Tiziana Ciano
+  affiliation: Università degli Studi Mediterranea di Reggio Calabria
+  year: 2022
+  url: https://tesidottorato.depositolegale.it/handle/20.500.14242/85525
+  title: "Advances on Dynamics Modeling: New Issues on Mathematical Programming, Artificial Intelligence and COVID-19 Transmission Forecasting"
+  supervisors:
+    - Massimiliano Ferrara
+    - Massimo Finocchiaro Castro
+
+- name: Alperen Yasar
+  affiliation: Università Ca' Foscari Venezia and Sorbonne Université 
+  year: 2025
+  url: 
+  title: "Three Essays in Mental Models"
+  supervisors:
+    - Marco LiCalzi
+
+- name: Alessandra Cretarola
+  affiliation: Università di Bologna
+  year: 2007
+  url: https://amsdottorato.unibo.it/id/eprint/422/
+  title: "Local Risk-Minimization for Defaultable Markets"
+  supervisors:
+    - Francesca Biagini
+    
+- name: Marco LiCalzi 
+  affiliation: Stanford University
+  year: 1993
+  url:  https://searchworks.stanford.edu/view/10043980
+  title: "Playing Games by Similarities"
+  supervisors:
+    - David Kreps
