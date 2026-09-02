@@ -1,3 +1,55 @@
+- name: Michele Azzone
+  affiliation: Politecnico di Milano
+  year: 2022
+  url: https://www.politesi.polimi.it/handle/10589/217919
+  title: "Additive Normal Tempered Stable Process: A New Way to Model the Implied Volatility Surface"
+  supervisors:
+    - Roberto Baviera
+
+- name: Amia Santini
+  affiliation: Università di Bologna
+  year: 2024
+  url: https://amsdottorato.unibo.it/id/eprint/11237/
+  title: "Green Finance and Portfolio Allocation: Diversification Benefits of Green Bonds and Probabilistic Modelling of Climate Risk"
+  supervisors:
+    - Silvia Romagnoli
+
+- name: Adele Ravagnani
+  affiliation: Scuola Normale Superiore
+  year: 2025
+  url: https://hdl.handle.net/11384/157690
+  title: "Statistical and Machine Learning for Market Abuse Detection and Limit Order Book Modeling"
+  supervisors:
+    - Fabrizio Lillo
+    - Piero Mazzarisi
+
+- name: Lucio Fiorin
+  affiliation: Università degli Studi di Padova
+  year: 2018 
+  url: https://www.research.unipd.it/bitstream/11577/3427145/1/Fiorin_Lucio_tesi.pdf
+  title: "Essays on Quantization in Financial Mathematics"
+  supervisors: 
+    - Martino Grasselli
+    - Giorgia Callegaro
+
+- name: Andrea Mazzoran
+  affiliation: Università degli Studi di Padova
+  year: 2021
+  url: https://dottorato.math.unipd.it/sites/default/files/tesi_definitiva_Andrea_Mazzoran_0.pdf
+  title: "Topics in Financial Mathematics"
+  supervisors: 
+    - Martino Grasselli
+    - Giorgia Callegaro
+
+- name: Giorgia Callegaro
+  affiliation: Université d'Evry and Scuola Normale Superiore
+  year: 2010
+  url: 
+  title: "Credit Risk Models under Partial Information"
+  supervisors: 
+    - Monique Jeanblanc
+    - Wolfgang J. Runggaldier
+
 - name: Claudio Fontana
   affiliation: Università degli Studi di Padova
   year: 2012
@@ -52,7 +104,7 @@
   year: 2020
   url: http://hdl.handle.net/11570/3182137
   title: "Assessing Performance Evaluation and Credit Risk of Energy Companies with Multicriteria Decision Models"
-  supervisors:
+  supervisor:
     - Silvia Angilella
 
 - name: Marco Piccirilli
