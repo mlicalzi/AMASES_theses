@@ -1,3 +1,21 @@
+- name: Marco Patacca
+  affiliation: Università degli Studi di Perugia
+  year: 2019
+  url: 
+  title: "Essays on Bitcoin Price Dynamics"
+  supervisors:
+    - Gianna Figà-Talamanca
+
+- name: Riccardo De Blasis
+  affiliation: Università degli Studi “G. d’Annunzio” di Chieti-Pescara and University of Wollongong
+  year: 2019
+  url: https://hdl.handle.net/10779/uow.27666747
+  title: "Markov Chain Modelling in Finance: Stock Valuation and Price Discovery"
+  supervisors:
+    - Guglielmo D'Amico
+    - Alex Frino
+    - Terry Walter
+
 - name: Michele Azzone
   affiliation: Politecnico di Milano
   year: 2022
