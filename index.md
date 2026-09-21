@@ -15,7 +15,7 @@ are very welcome: ping <a href="https://github.com/mlicalzi/AMASES_theses">GitHu
 </p>
 
 {% assign theses_by_year = site.data.theses | group_by: 'year' %}
-{% assign theses_by_year_sorted = theses_by_year | sort_natural: 'lastname' | reverse %}
+{% assign theses_by_year_sorted = theses_by_year | sort: 'name' | reverse %}
 
 <nav class="year-nav">
   {% for year in theses_by_year_sorted %}
@@ -24,12 +24,13 @@ are very welcome: ping <a href="https://github.com/mlicalzi/AMASES_theses">GitHu
 </nav>
 
 {% for year in theses_by_year_sorted %}
+{% assign sorted_items = year.items | sort_natural: 'lastname' %}
 <section id="{{ year.name }}">
   <h2 class="year-heading">{{ year.name }}</h2>
   <ul class="thesis-list">
-    {% for thesis in year.items %}
+    {% for thesis in sorted_items %}
     <li>
-      <div class="thesis-author"><strong>{{ thesis.firstname } { thesis.lastname }}</strong> ({{ thesis.affiliation }}, {{ thesis.year }})</div>
+      <div class="thesis-author"><strong>{{ thesis.firstname }} {{ thesis.lastname }}</strong> ({{ thesis.affiliation }}, {{ thesis.year }})</div>
       <div class="thesis-title"><a href="{{ thesis.url }}" target="_blank" rel="noreferrer">{{ thesis.title }}</a></div>
       {% if thesis.supervisors and thesis.supervisors.size > 0 %}
       <div class="thesis-supervisor">
