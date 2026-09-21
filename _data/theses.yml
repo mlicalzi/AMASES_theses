@@ -1,4 +1,5 @@
-- name: Marco Patacca
+- firstname: Marco
+  lastname: Patacca
   affiliation: Università degli Studi di Perugia
   year: 2019
   url: 
@@ -6,7 +7,8 @@
   supervisors:
     - Gianna Figà-Talamanca
 
-- name: Riccardo De Blasis
+- firstname: Riccardo
+  lastname: De Blasis
   affiliation: Università degli Studi “G. d’Annunzio” di Chieti-Pescara and University of Wollongong
   year: 2019
   url: https://hdl.handle.net/10779/uow.27666747
@@ -16,7 +18,8 @@
     - Alex Frino
     - Terry Walter
 
-- name: Michele Azzone
+- firstname: Michele
+  lastname: Azzone
   affiliation: Politecnico di Milano
   year: 2022
   url: https://www.politesi.polimi.it/handle/10589/217919
@@ -24,7 +27,8 @@
   supervisors:
     - Roberto Baviera
 
-- name: Amia Santini
+- firstname: Amia
+  lastname: Santini
   affiliation: Università di Bologna
   year: 2024
   url: https://amsdottorato.unibo.it/id/eprint/11237/
@@ -32,7 +36,8 @@
   supervisors:
     - Silvia Romagnoli
 
-- name: Adele Ravagnani
+- firstname: Adele
+  lastname: Ravagnani
   affiliation: Scuola Normale Superiore
   year: 2025
   url: https://hdl.handle.net/11384/157690
@@ -41,7 +46,8 @@
     - Fabrizio Lillo
     - Piero Mazzarisi
 
-- name: Lucio Fiorin
+- firstname: Lucio
+  lastname: Fiorin
   affiliation: Università degli Studi di Padova
   year: 2018 
   url: https://www.research.unipd.it/bitstream/11577/3427145/1/Fiorin_Lucio_tesi.pdf
@@ -50,7 +56,8 @@
     - Martino Grasselli
     - Giorgia Callegaro
 
-- name: Andrea Mazzoran
+- firstname: Andrea
+  lastname: Mazzoran
   affiliation: Università degli Studi di Padova
   year: 2021
   url: https://dottorato.math.unipd.it/sites/default/files/tesi_definitiva_Andrea_Mazzoran_0.pdf
@@ -59,7 +66,8 @@
     - Martino Grasselli
     - Giorgia Callegaro
 
-- name: Giorgia Callegaro
+- firstname: Giorgia
+  lastname:  Callegaro
   affiliation: Université d'Evry and Scuola Normale Superiore
   year: 2010
   url: 
@@ -68,7 +76,8 @@
     - Monique Jeanblanc
     - Wolfgang J. Runggaldier
 
-- name: Claudio Fontana
+- firstname: Claudio 
+  lastname: Fontana
   affiliation: Università degli Studi di Padova
   year: 2012
   url: https://www.research.unipd.it/handle/11577/3421736
@@ -76,7 +85,8 @@
   supervisors: 
     - Wolfgang J. Runggaldier
 
-- name: Federico Severino
+- firstname: Federico 
+  lastname: Severino
   affiliation: Università Commerciale Luigi Bocconi 
   year: 2018
   url: https://tesidottorato.depositolegale.it/bitstream/20.500.14242/167154/1/1691377.pdf
@@ -84,7 +94,8 @@
   supervisors:
     - Fulvio Ortu
     
-- name: Guodong Ding
+- firstname: Guodong 
+  lastname: Ding
   affiliation: Politecnico di Milano
   year: 2021
   url: https://www.politesi.polimi.it/handle/10589/177423
@@ -92,7 +103,8 @@
   supervisors:
     - Daniele Marazzina
 
-- name: Gaetano La Bua
+- firstname: Gaetano 
+  lastname: La Bua
   affiliation: Politecnico di Milano
   year: 2017
   url: https://www.politesi.polimi.it/handle/10589/131919
@@ -100,7 +112,8 @@
   supervisors:
     - Daniele Marazzina
 
-- name: Mariaelisa Pelle
+- firstname: Mariaelisa
+  lastname: Pelle
   affiliation: Università degli Studi del Sannio
   year: 2026
   url:
@@ -109,7 +122,8 @@
     - Nicolino Ettore D'Ortona
     - Gabriella Marcarelli
 
-- name: Roberto Casarin
+- firstname: Roberto
+  lastname: Casarin
   affiliation: Université Paris Dauphine - PSL
   year: 2007
   url: https://theses.fr/2007PA090056
@@ -117,7 +131,8 @@
   supervisors:
     - Christian P. Robert
 
-- name: Maria Rosaria Pappalardo
+- firstname: Maria Rosaria
+  lastname: Pappalardo
   affiliation: Università degli Studi di Messina
   year: 2020
   url: http://hdl.handle.net/11570/3182137
@@ -125,7 +140,8 @@
   supervisor:
     - Silvia Angilella
 
-- name: Marco Piccirilli
+- firstname: Marco
+  lastname: Piccirilli
   affiliation: Università degli Studi di Padova
   year: 2019
   url: https://www.research.unipd.it/retrieve/e14fb26f-f7e6-3de1-e053-1705fe0ac030/Thesis_reviewed.pdf
@@ -133,7 +149,8 @@
   supervisors:
     - Tiziano Vargiolu
 
-- name: Matteo Basei
+- firstname: Matteo
+  lastname: Basei
   affiliation: Università degli Studi di Padova
   year: 2016
   url: https://www.research.unipd.it/retrieve/e14fb26f-f26e-3de1-e053-1705fe0ac030/Basei_Matteo_tesi.pdf
@@ -141,7 +158,8 @@
   supervisors:
     - Tiziano Vargiolu
 
-- name: Stefano Pagliarani
+- firstname: Stefano
+  lastname: Pagliarani
   affiliation: Università degli Studi di Padova
   year: 2014
   url: https://www.research.unipd.it/retrieve/e14fb26f-fbe9-3de1-e053-1705fe0ac030/pagliarani_stefano_tesi.pdf
@@ -151,7 +169,8 @@
     - Agostino Capponi
     - Andrea Pascucci
 
-- name: Enrico Edoli
+- firstname: Enrico
+  lastname: Edoli
   affiliation: Università degli Studi di Padova
   year: 2013
   url: https://www.research.unipd.it/retrieve/e14fb26f-f1c6-3de1-e053-1705fe0ac030/Enrico_Edoli_tesi.pdf
@@ -159,7 +178,8 @@
   supervisors:
     - Tiziano Vargiolu
 
-- name: Mihaela Antonia Cucicea
+- firstname: Mihaela Antonia 
+  lastname: Cucicea
   affiliation: Università degli Studi di Padova
   year: 2006
   url:
@@ -167,7 +187,8 @@
   supervisors:
     - Tiziano Vargiolu
 
-- name: Vera Blaka Hallulli
+- firstname: Vera 
+  lastname: Blaka Hallulli
   affiliation: Università degli Studi di Padova
   year: 2005
   url:
@@ -176,7 +197,8 @@
     - Giovanni Battista Di Masi
     - Tiziano Vargiolu
 
-- name: Tiziano Vargiolu
+- firstname: Tiziano
+  lastname: Vargiolu
   affiliation: Scuola Normale Superiore
   year: 2002
   url:
@@ -184,7 +206,8 @@
   supervisors:
     - Wolfgang Runggaldier
 
-- name: Maria Flora
+- firstname: Maria
+  lastname: Flora
   affiliation: Università degli Studi di Padova
   year: 2019
   url: https://www.research.unipd.it/retrieve/e14fb26f-f7db-3de1-e053-1705fe0ac030/Flora_Maria_tesi.pdf
@@ -192,7 +215,8 @@
   supervisors:
     - Tiziano Vargiolu
 
-- name: Almendra Alexandra Awerking Vargas
+- firstname: Almendra Alexandra
+  lastname: Awerking Vargas
   affiliation: Università degli Studi di Padova
   year: 2022
   url: https://www.research.unipd.it/retrieve/f38e2de5-4ebf-48cb-b947-59a13b1c4c19/Final_Thesis_Almendra_Awerkin.pdf
@@ -201,7 +225,8 @@
     - Tiziano Vargiolu
     - Markus Fischer
     
-- name: Mariia Soloviova
+- firstname: Mariia
+  lastname: Soloviova
   affiliation: Università degli Studi di Padova
   year: 2021
   url: https://www.research.unipd.it/retrieve/97e3ae3b-77f4-48b0-8508-af9a7a17eea0/tesi_Mariia_Soloviova-pdfa.pdf
@@ -209,7 +234,8 @@
   supervisors:
     - Tiziano Vargiolu
 
-- name: Francesca Grassetti
+- firstname: Francesca
+  lastname: Grassetti
   affiliation: Università degli Studi di Macerata
   year: 2018
   url: https://u-pad.unimc.it/handle/11393/251177
@@ -217,7 +243,8 @@
   supervisors:
     - Cristiana Mammana
     
-- name: Ilaria Stefani
+- firstname: Ilaria
+  lastname: Stefani
   affiliation: Sapienza Università di Roma
   year: 2024
   url: 
@@ -225,7 +252,8 @@
   supervisors:
     - Immacolata Oliva
  
-- name: Giorgia Franchini
+- firstname: Giorgia
+  lastname: Franchini
   affiliation: Università degli Studi di Modena e Reggio Emilia
   year: 2021
   url: https://iris.unimore.it/retrieve/e31e124f-6fe7-987f-e053-3705fe0a095a/TesiDefinitiva_FranchiniGiorgia.pdf
@@ -234,7 +262,8 @@
     - Luca Zanni
     - Valeria Ruggiero
 
-- name: Angelo Enrico Petralia 
+- firstname: Angelo Enrico
+  lastname: Petralia 
   affiliation: University of Turin and Collegio Carlo Alberto
   year: 2022
   url: https://iris.unito.it/retrieve/870a3196-e1b2-4833-90b6-5f7d9d8949a6/Petralia_Phd_thesis.pdf
@@ -242,7 +271,8 @@
   supervisors:
     - Paolo Ghirardato
  
-- name: Davide Carpentiere
+- firstname: Davide
+  lastname: Carpentiere
   affiliation: University of Messina (joint program with the universities of Palermo and Catania)
   year: 2026
   url: https://iris.unime.it/handle/11570/3347471
@@ -252,7 +282,8 @@
     - Alfio Giarlotta
     - Stephen Watson
  
-- name: Ester Sudano
+- firstname: Ester
+  lastname: Sudano
   affiliation: Queen Mary University of London
   year: 2026
   url: 
@@ -262,7 +293,8 @@
     - Christopher Tyson 
     - Evgenii Safonov
               
-- name: Daniele Mancinelli
+- firstname: Daniele
+  lastname: Mancinelli
   affiliation: Sapienza Università di Roma
   year: 2024
   url: https://hdl.handle.net/20.500.14242/158460
@@ -270,7 +302,8 @@
   supervisors:
     - Immacolata Oliva
  
-- name: Sara Iannilli
+- firstname: Sara
+  lastname: Iannilli
   affiliation: Sapienza Università di Roma
   year: 2026
   url: https://iris.uniroma1.it/handle/11573/1760653
@@ -279,7 +312,8 @@
     - Immacolata Oliva
     - Antonio Luciano Martire
 
-- name: Ofelia Bonesini
+- firstname: Ofelia
+  lastname: Bonesini
   affiliation: Università degli Studi di Padova
   year: 2023
   url: https://www.research.unipd.it/handle/11577/3474223
@@ -288,7 +322,8 @@
     - Markus Fischer
     - Giorgia Callegaro
 
-- name: Benedetta Salterini
+- firstname: Benedetta
+  lastname: Salterini
   affiliation: Università degli Studi di Firenze
   year: 2023
   url: https://flore.unifi.it/handle/2158/1316433
@@ -297,7 +332,8 @@
     - Katia Colaneri
     - Alessandra Cretarola
 
-- name: Giacomo Lanaro
+- firstname: Giacomo
+  lastname: Lanaro
   affiliation: Università degli Studi di Padova
   year: 2024
   url: https://www.research.unipd.it/handle/11577/3518003
@@ -305,7 +341,8 @@
   supervisors:
     - Claudio Fontana
 
-- name: Beatrice Ongarato
+- firstname: Beatrice
+  lastname: Ongarato
   affiliation: Università degli Studi di Padova
   year: 2026
   url: https://www.research.unipd.it/handle/11577/3583599
@@ -314,7 +351,8 @@
     - Giorgia Callegaro
     - Claudio Fontana
     
-- name: Tiziana Ciano
+- firstname: Tiziana
+  lastname: Ciano
   affiliation: Università degli Studi Mediterranea di Reggio Calabria
   year: 2022
   url: https://tesidottorato.depositolegale.it/handle/20.500.14242/85525
@@ -323,7 +361,8 @@
     - Massimiliano Ferrara
     - Massimo Finocchiaro Castro
 
-- name: Alperen Yasar
+- firstname: Alperen
+  lastname: Yasar
   affiliation: Università Ca' Foscari Venezia and Sorbonne Université 
   year: 2025
   url: 
@@ -331,7 +370,8 @@
   supervisors:
     - Marco LiCalzi
 
-- name: Alessandra Cretarola
+- firstname: Alessandra
+  lastname: Cretarola
   affiliation: Università di Bologna
   year: 2007
   url: https://amsdottorato.unibo.it/id/eprint/422/
@@ -339,7 +379,8 @@
   supervisors:
     - Francesca Biagini
     
-- name: Marco LiCalzi 
+- firstname: Marco
+  lastname: LiCalzi 
   affiliation: Stanford University
   year: 1993
   url:  https://searchworks.stanford.edu/view/10043980
